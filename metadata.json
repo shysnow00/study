@@ -1,0 +1,6 @@
+{
+  "name": "오늘의 기분 배터리",
+  "description": "오늘의 기분 상태를 배터리 게이지와 다채로운 시각 효과로 시각화하고 일기 형식으로 기록하는 인터랙티브 감성 기분 관리 배터리 애플리케이션",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,55 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Pretendard", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-mono: "Fira Code", monospace;
+  --font-display: "Pretendard", sans-serif;
+  --font-serif-korean: "Pretendard", sans-serif;
+}
+
+/* Custom Wave Animation for the Battery Liquid */
+@keyframes wave1 {
+  0% { transform: translate(-50%, 0) rotate(0deg); }
+  100% { transform: translate(-50%, -15%) rotate(360deg); }
+}
+
+@keyframes wave2 {
+  0% { transform: translate(-50%, 0) rotate(0deg); }
+  100% { transform: translate(-50%, -10%) rotate(-360deg); }
+}
+
+.animate-wave-slow {
+  animation: wave1 8s infinite linear;
+}
+
+.animate-wave-fast {
+  animation: wave2 5s infinite linear;
+}
+
+/* Glow and pulsing effects */
+@keyframes neon-pulse {
+  0%, 100% { opacity: 0.6; filter: drop-shadow(0 0 5px var(--glow-color, #10b981)); }
+  50% { opacity: 1; filter: drop-shadow(0 0 15px var(--glow-color, #10b981)); }
+}
+
+.animate-neon-pulse {
+  animation: neon-pulse 2s infinite ease-in-out;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(156, 163, 175, 0.3);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(156, 163, 175, 0.5);
+}
+
